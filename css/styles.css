@@ -1,4 +1,3 @@
-/* All Aplication */
 *{
     padding: 0;
     margin: 0;
@@ -47,13 +46,11 @@ select {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
-/* ToDo Header*/
-
 .todo_container{
-    max-width: 450px;
+    max-width: 700px;
     margin: 3rem auto;
     background-color: #fdfdfd;
     padding: 1.5rem;
@@ -65,8 +62,6 @@ select {
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
 }
-
-/* ToDo Form*/
 
 #todo_form, 
 #edit_form{
@@ -91,8 +86,6 @@ select {
 #cancel_edit_btn{
     margin-top: 1rem;
 }
-
-/* ToDo Toolbar*/
 
 #toolbar{
     padding: 1rem;
@@ -132,11 +125,9 @@ select {
     flex: 1;
 }
 
-/* ToDo List*/
-
 .todo{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
@@ -160,4 +151,77 @@ select {
     color: #fff;
     text-decoration: line-through;
     font-style: italic;
+}
+.done h5{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.btn_container{
+    display: flex;
+}
+.text_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+.text_tarefa h5{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text_tarefa{
+    margin-right: 5px;
+    width: 56%;
+}
+
+.text_data{
+    margin-left: 5px;
+}
+
+.input_default{
+    width: 100%;
+    height: 30px;
+}
+
+#todo_tarefa{
+    width: 50%;
+    margin-right: 5px;
+}
+
+#edit_tarefa{
+    width: 50%;
+    margin-right: 5px;
+}
+
+#todo_date{
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#edit_date{
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#todo_save{
+    display: flex;
+    align-items: end;
+    margin-left: 5px;
+}
+
+#edit_save{
+    display: flex;
+    align-items: end;
+    margin-left: 5px;
+}
+
+.taskIsDue{
+    color: red;
 }
